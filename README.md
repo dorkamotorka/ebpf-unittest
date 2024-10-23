@@ -16,4 +16,4 @@ bpftool gen skeleton allow_ssh.o > allow_ssh.skel.h
 ```
 gcc -o test test.c -lbpf
 ```
-**Note**: `-l` linker TODO
+**Note**: `-lbpf` links the program to the libbpf library, which is a user-space library that provides APIs to interact with eBPF programs.
